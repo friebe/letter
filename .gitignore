@@ -1,0 +1,9 @@
+.idea
+
+# Ignore the entire letter-boxes directory
+letter-boxes/
+
+# Except for the 02_test.md file in the letter-boxes directory
+!letter-boxes/02_test.md
+
+config/
