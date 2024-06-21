@@ -1,0 +1,14 @@
+/* Customize the CSS here */
+
+@media print {
+    .hidden-print {
+      display: none;
+    }
+  }
+
+form {
+  position: fixed;
+  top:0;
+  background-color: white;
+  padding:10px;
+}

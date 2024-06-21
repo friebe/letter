@@ -12,7 +12,7 @@ You can setup your own letter template and customize the design with CSS.
 
 ## Demo
 
-This is how Letter looks like: https://bastianallgeier.com/projects/letter/
+This is how Letter looks like in original: https://bastianallgeier.com/projects/letter/
 
 ## Installation
 
@@ -44,7 +44,7 @@ On macOS you can use your browser's print dialog to export your Letter to PDF vi
 
 ### Configuration 
 
-You can setup the global content of your Letter in `config/config.php`. Adjust the settings and add your own data there. 
+You can setup the global content of your Letter in `config/config.php`. Adjust the default settings and add your own data there. 
 
 #### Available options
 
