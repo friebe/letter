@@ -1,22 +1,29 @@
 # Letter
 
-Letter is a simple, highly customizable tool to create letters in your browser. 
+Letter is a simple, highly customizable tool designed to help you create professional letters directly in your browser. This tool allows you to write your letters in a markdown file and load its content into a letter template for easy formatting and presentation.
 
-![Letter Screenshot](https://user-images.githubusercontent.com/24532/64169395-064d2200-ce4e-11e9-8315-a19b6f571a16.png)
-
+# Background Motivation
 Instead of messing around in Word, Pages or even Indesign, you can write your letters in the browser, export them as HTML or PDF (via Apple Preview). 
 
 Written in plain HTML, CSS and some PHP, Letter can be installed in seconds and run either on your machine with PHP's built-in server, something like MAMP or on a server. 
 
 You can setup your own letter template and customize the design with CSS. 
 
-## Demo
+# Features
+- Markdown Support: Write your letters using Markdown, making it easy to format text.
+- Customizable Templates: Load your markdown content into customizable letter templates.
+- Browser-Based: Create and edit your letters directly in your web browser.
+- Simple File Management: Store your markdown files in a designated folder for easy access.
+
+# Screenshot 
+![Letter Screenshot](./letter-screenshot.png)
+
+
+## Original Demo
 
 This is how Letter looks like in original: https://bastianallgeier.com/projects/letter/
 
-## Installation
-
-### PHP's built-in server
+## Getting started
 
 ```
 git clone https://github.com/bastianallgeier/letter.git
@@ -24,10 +31,6 @@ cd letter
 php -S localhost:8888
 ```
 
-### MAMP
-
-1. Download Letter and move it to the htdocs folder of your MAMP installation. 
-2. Open http://localhost/letter in your browser
 
 ## How to…
 
@@ -40,6 +43,9 @@ Use your browser's print dialog to print your finished Letters. Make sure to set
 ### Export PDFs
 On macOS you can use your browser's print dialog to export your Letter to PDF via Apple Preview. As long as you get the printing settings correct, the PDF will look good too. 
 
+### Create a markdown file with your letter content
+Create a new markdown file under the ./letter-boxes directory. For example see the existing file *02_default.md*
+
 ## Setup
 
 ### Configuration 
@@ -51,7 +57,7 @@ You can setup the global content of your Letter in `config/config.php`. Adjust t
 ```php
 return [
   'title'      => 'Letter',
-  'dateFormat' => 'd. F Y',
+  'dateFormat' => 'dmY',
   'name'       => 'John Doe',
   'street'     => 'Infinite Loop 12',
   'city'       => '34512 Examplia',
@@ -100,7 +106,7 @@ If you want to further modify your Letter, you can copy the default template fil
 ## Requirements
 
 - PHP 5.6+
-- Latest Chrome or Opera
+- Latest Chrome (tested)
 - YAML support for PHP (install yaml extension via PECL, enable extension in php.ini)
 
 Firefox and Safari have issues with margins, when you want to print your letter. I haven't tested IE and Edge yet. Help with additional CSS adjustments is highly welcome! 
@@ -115,7 +121,7 @@ Bastian Allgeier
 <bastian@getkirby.com>  
 <http://twitter.com/bastianallgeier>
 
-## Author of custimazation
+## Author of mardown support
 Jan Friebe
 <jan.friebe@gmx.net>  
 

@@ -2,7 +2,7 @@
 
 return [
   'title'      => 'Letter',
-  'dateFormat' => '%d. %B %Y',
+  'dateFormat' => 'd. MMMM YYYY',
   'locale'     => 'en_EN',
   'name'       => 'John Doe',
   'street'     => 'Infinite Loop 12',

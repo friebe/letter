@@ -2,8 +2,8 @@
 
 # Ignore the entire letter-boxes directory
 letter-boxes/*
-# Except for the 02_test.md file in the letter-boxes directory
-!letter-boxes/02_test.md
+# Except for the 02_default.md file in the letter-boxes directory
+!letter-boxes/02_default.md
 
 config/*
 !config/styles.css

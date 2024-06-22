@@ -37,7 +37,7 @@ $now = new DateTime();
 
 // set the current date as default date
 $formatter = new IntlDateFormatter(
-  'de_DE', // Locale (German in this case)
+  $data['locale'],
   IntlDateFormatter::FULL, 
   IntlDateFormatter::NONE,
   $now->getTimezone(),
